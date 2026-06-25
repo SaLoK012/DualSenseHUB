@@ -1,5 +1,12 @@
 DualSenseHUB
 
+## Vídeo de demonstração
+
+Assista ao vídeo mostrando a instalação e o funcionamento do DualSenseHUB:
+
+[▶ Assistir à demonstração do DualSenseHUB](https://www.youtube.com/watch?v=lclVLpOt0Zk)
+
+
 Aplicativo leve e comunitário para Windows que mostra a bateria do controle
 DualSense em um overlay e permite desligar o computador.
 
