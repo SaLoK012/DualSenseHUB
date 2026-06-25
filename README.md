@@ -1,21 +1,20 @@
-# DualSenseHUB
+DualSenseHUB
 
 Aplicativo leve e comunitário para Windows que mostra a bateria do controle
-DualSense em um overlay e permite desligar o computador segurando o botão
-**PS**.
+DualSense em um overlay e permite desligar o computador.
 
 > Projeto não oficial, sem vínculo, patrocínio ou aprovação da Sony Interactive Entertainment.
 
-## Versão estável
+Versão estável
 
 **v1.0.12**
 
-## Funcionalidades
+Funcionalidades
 
 - Mostra o overlay ao pressionar o botão **PS**.
 - Lê a bateria por USB e Bluetooth.
 - Mostra um raio quando o controle está carregando.
-- Exibe **“Bateria fraca — conecte o carregador”** quando entra na faixa crítica representada como **5%**.
+- Exibe **“Bateria fraca — conecte o carregador”** quando a bateria esta aproximadamente aos **5%**.
 - Mudanças normais de carga, como 45% → 55%, atualizam silenciosamente e não abrem o overlay.
 - Mostra o overlay ao conectar/desconectar o carregador e ao conectar o controle.
 - Segurando **PS por 3 segundos**, agenda o desligamento do Windows em 10 segundos.
@@ -26,7 +25,7 @@ DualSense em um overlay e permite desligar o computador segurando o botão
 - Não aparece na barra de tarefas.
 - Não usa rede, telemetria, anúncios, conta online ou servidor externo.
 
-## Compatibilidade
+Compatibilidade
 
 - Windows 10/11 x64.
 - DualSense padrão: PID `0CE6`.
@@ -37,7 +36,7 @@ A validação física principal da v1.0.12 foi feita com um **DualSense Edge**.
 O código também reconhece o DualSense padrão, mas testes adicionais da comunidade
 são bem-vindos.
 
-## Como a bateria Bluetooth funciona
+Como a bateria Bluetooth funciona
 
 No Bluetooth padrão, o pacote simples do DualSense contém os botões, mas não a
 bateria. Quando esse pacote é detectado, o DualSenseHUB abre o dispositivo em
@@ -50,13 +49,13 @@ vibração ou gatilhos. Mesmo assim, o relatório completo pode ser incompatíve
 com algum aplicativo antigo baseado em DirectInput. O modo permanece ativo até
 o controle ser desligado e ligado novamente.
 
-## Precisão da porcentagem
+Precisão da porcentagem
 
 O DualSense informa níveis em faixas, não uma medição contínua de 1% em 1%.
 Por isso, o overlay normalmente mostra valores como 5%, 15%, 25%, 35% e assim
 por diante. O aviso em **5%** representa aproximadamente a faixa de **0–9%**.
 
-## Instalação
+Instalação
 
 Baixe `DualSenseHUB.exe` na seção **Releases** e execute uma vez. O programa
 copia a versão instalada para:
@@ -68,13 +67,12 @@ copia a versão instalada para:
 Depois que a cópia instalada iniciar, o arquivo baixado pode ser apagado.
 Executar uma versão mais nova atualiza a cópia instalada.
 
-### SmartScreen
+SmartScreen
 
 O projeto é aberto, mas o executável não possui certificado comercial de
 assinatura de código. O Windows pode mostrar “Editor desconhecido”. Confira o
 hash da release e, para máxima confiança, compile a tag correspondente.
-
-## Cancelar o desligamento
+Cancelar o desligamento
 
 Durante os 10 segundos de espera, pressione `Win + R` e execute:
 
@@ -82,7 +80,7 @@ Durante os 10 segundos de espera, pressione `Win + R` e execute:
 shutdown /a
 ```
 
-## Auditoria rápida
+Auditoria rápida
 
 Os comportamentos mais sensíveis estão concentrados nestes locais:
 
@@ -92,9 +90,8 @@ Os comportamentos mais sensíveis estão concentrados nestes locais:
 - `battery_windows.go`: leitura auxiliar de bateria pelo Windows.
 - `debuglog_windows.go`: log local de diagnóstico.
 
-Consulte também `AUDIT.md` e `SECURITY.md`.
-
-## Compilar
+Consulte também `AUDIT.md` e `SECURITY.md
+Compilar
 
 Requisitos:
 
@@ -122,17 +119,19 @@ O aplicativo em execução usa somente a biblioteca padrão do Go e APIs nativas
 do Windows. A ferramenta `go-winres` participa apenas da compilação do recurso
 de ícone.
 
-## Build público
+Build público
 
 Os workflows em `.github/workflows/` executam formatação, `go vet`, testes,
 compilação e geração do SHA-256. Uma tag como `v1.0.12` cria automaticamente uma
 GitHub Release com o executável.
 
-## Desinstalar
+Desinstalar
 
 Execute `uninstall.cmd`. O script encerra o processo, remove a inicialização
 automática, o atalho do Menu Iniciar e a pasta instalada.
 
-## Licença
+Licença
 
 O código-fonte está sob a licença MIT. Consulte `LICENSE` e `NOTICE.md`.
+
+LEMBRANDO EM JOGOS QUE TEM A OPCAO DE TELA CHEIA EXCLUSIVA ELE NAO VAI SOBREPOR POR CONTA QUE ISSO PODERIA ACUSAR COMO UM CHEAT DEPENDENDO DO JOGO QUE VC USA E COMO ELE FICA EM 2 PLANO PODERIA TRAZER PROBLEMAS MAIS E SO RODAR EM JANELA TELA CHEIA OU TELA CHEIA NORMAL.
