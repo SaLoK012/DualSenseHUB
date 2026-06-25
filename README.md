@@ -4,7 +4,7 @@ Vídeo de demonstração
 
 Assista ao vídeo mostrando a instalação e o funcionamento do DualSenseHUB:
 
-[▶ Assistir à demonstração do DualSenseHUB](https://www.youtube.com/watch?v=lclVLpOt0Zk)
+[▶ Assistir à demonstração do DualSenseHUB](https://youtu.be/D2w3TmOZ9SM)
 
 
 
